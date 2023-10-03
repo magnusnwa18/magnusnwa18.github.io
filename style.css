@@ -1,0 +1,95 @@
+/* Reset some default styles and set a dark blue gradient background */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #0c1c3b, #051126);
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  /* Add a green accent color */
+  a {
+    color: #4caf50;
+    text-decoration: none;
+  }
+  
+  /* Apply a box shadow to headers for a subtle 3D effect */
+  h1, h2, h3, h4, h5 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Style the header section */
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Style the sections with a light background and margin */
+  section {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Style links for better UX/UI */
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Add hover effect to sections */
+  section:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Style the footer */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Apply the Zeigarnik effect */
+  section:not(:hover) {
+    opacity: 0.7;
+  }
+  
+  /* Style the skills list */
+  #skills ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #skills li {
+    margin: 5px 0;
+  }
+  
+  /* Style project links */
+  .project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .project a:hover {
+    background-color: #357a38;
+  }
+  
+  /* Style the header link and add a hover effect */
+  header a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
