@@ -1,95 +1,323 @@
-/* Reset some default styles and set a dark blue gradient background */
+/* style.css */
+@font-face {
+    font-family: 'SF Pro';
+    src: url('fonts/SF-Pro-Regular.woff2') format('woff2'), /* Specify the path to the .woff2 font file */
+         url('fonts/SF-Pro-Regular.woff') format('woff'); /* Specify the path to the .woff font file */
+    /* Add additional formats if needed */
+    font-weight: normal; /* You can specify font weight */
+    font-style: normal; /* You can specify font style (e.g., italic) */
+}
+
 body {
+    /* font-family: Arial, sans-serif; */
+    font-family: 'SF Pro', Arial, sans-serif; /* Use 'SF Pro' as the preferred font family */
+    background-color: #121212; /* Dark background color */
+    color: #fff; /* Text color */
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #0c1c3b, #051126);
-    font-family: Arial, sans-serif;
-    color: white;
-  }
-  
-  /* Add a green accent color */
-  a {
-    color: #4caf50;
-    text-decoration: none;
-  }
-  
-  /* Apply a box shadow to headers for a subtle 3D effect */
-  h1, h2, h3, h4, h5 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Style the header section */
-  header {
+}
+
+header {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    /* background-color: #121212; Semi-transparent dark header */
+    background: linear-gradient(180deg, #061420, #121212);
+    color: #fff;
     text-align: center;
-    padding: 20px;
-  }
-  
-  /* Style the sections with a light background and margin */
-  section {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  }
-  
-  /* Style links for better UX/UI */
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Add hover effect to sections */
-  section:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s ease;
-  }
-  
-  /* Style the footer */
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20rem 10rem; /* Increased padding at top and bottom */
+}
+
+header h1 {
+    font-size: 3.5rem;
+}
+
+.blue-text {
+    background: linear-gradient(45deg, #019eff, #015d97); /* Define your gradient colors */
+    -webkit-background-clip: text; /* Clip the gradient to the text */
+    background-clip: text; /* Clip the gradient to the text */
+    color: transparent; /* Make the text color transparent */
+    /* text-fill-color: transparent; Set the text fill color to transparent */
+}
+
+
+header p {
+    font-size: 1.2rem;
+}
+
+.social-icons {
     margin-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  /* Apply the Zeigarnik effect */
-  section:not(:hover) {
-    opacity: 0.7;
-  }
-  
-  /* Style the skills list */
-  #skills ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  #skills li {
-    margin: 5px 0;
-  }
-  
-  /* Style project links */
-  .project a {
+    margin-bottom: 20px;  /* Adjust the spacing between icons and text */
+}
+
+.icon-linkedin,
+.icon-github {
+    font-size: 24px; /* Adjust the icon size */
+    margin-right: 10px; /* Adjust the spacing between icons */
+    color: #1DA1F2; /* Twitter blue link color */
+}
+
+
+.button {
     display: inline-block;
-    margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #4caf50;
-    color: white;
+    padding: 10px 20px;
+    background-color: #1DA1F2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 55px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background:linear-gradient(45deg, #019eff, #015d97); 
+    color: #fff;
+    transition: var(--transition-delay);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #121212 !important; Semi-transparent dark content background */
     border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+section {
+    /* background-color: rgba(32, 40, 181, 0.1); Semi-transparent white sections for glass effect */
+    background-color: transparent;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: var(--transition-delay);
+
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.4px);
+    -webkit-backdrop-filter: blur(15.4px); */
+    /* border: 1px solid rgba(31, 115, 197, 0.33); */
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+ul {
+    list-style: disc;
+    /* margin-left: 2rem; */
+}
+
+.skills-list {
+    list-style: none; /* Remove default list bullet points */
+    padding: 0;
+    display: flex; /* Set the display to flex */
+    flex-wrap: wrap; /* Allow skills to wrap to the next line if needed */
+}
+
+.skills-list li {
+    background-color: transparent;
+    border: 1px solid #1DA1F2; /* Blue outline */
+    color: #1DA1F2; /* Blue text color */
+    padding: 8px 16px;
+    margin: 0px 0px 0px 2px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.skills-list li:hover {
+    /* background-color: #1DA1F2; Blue background on hover */
+    background:linear-gradient(45deg, #019eff, #015d97);
+    color: #fff; /* White text color on hover */
+}
+
+a {
+    color: #1DA1F2; /* Twitter blue link color */
     text-decoration: none;
-  }
-  
-  .project a:hover {
-    background-color: #357a38;
-  }
-  
-  /* Style the header link and add a hover effect */
-  header a {
-    color: white;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0F89D4; /* Darker blue on hover */
+}
+
+footer {
+    background-color: #121212; /* Semi-transparent dark footer */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+section#contact {
+    /* background: linear-gradient(180deg, #0F89D4 , #061420 80%) ; */
+    margin-top: 3rem;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
+    display: flex; /* Use flexbox for a two-column layout */
+    justify-content: space-between; /* Add space between columns */
+}
+
+.contact-info,
+.contact-form {
+    width: 48%; /* Set width for columns */
+}
+
+.contact-info h2,
+.contact-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0F89D4;
+}
+
+
+
+/* .social-container{
+    display: flex;
+    flex-wrap: wrap; 
+}
+.github-container,.datacamp-container,
+.linkedin-container {
+    width: 266px;
+    height: 266px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1d1d; 
+    margin: 10px; 
+    padding: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+
+.linkedin-container {
+    background-color: #0A66C2 !important; 
+}
+.linkedin-container:hover {
+    background: linear-gradient(180deg, #0A66C2 , #061420 80%)  !important;
+}
+
+.github-container:hover{
+    background:linear-gradient(180deg, #1d1d1d , #061420 80%); 
+}
+
+.datacamp-container:hover{
+    background:linear-gradient(180deg, #09EF62 , #062010 80%); 
+}
+
+.datacamp-container {
+    background-color: #09EF62 !important; 
+} */
+
+.social-link {
     text-decoration: none;
+}
+
+.social-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%; /* Make the icon round */
+    margin-bottom: 10px; /* Add spacing between icon and text */
+}
+
+.social-media-logo {
+    color: #ffffff;
+    height: 80px;
+    width: 80px;
+    display: flex;
   }
+
   
-  header a:hover {
-    text-decoration: underline;
-  }
+
+
+  .social-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 266px;
+
+
   
+
+}
+
+.github-container,
+.linkedin-container,
+.twitter-container,
+.instagram-container,
+.youtube-container {
+    background-color: #0A66C2 !important; 
+    width: 266px;
+    height: 266px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    transition: var(--transition-delay);
+}
+
+.github-container:hover,
+.linkedin-container:hover,
+.twitter-container:hover,
+.instagram-container:hover,
+.youtube-container:hover {
+    background: linear-gradient(180deg, #0A66C2 , #061420 80%);
+}
+
+
+.github-container {
+    grid-column: 2/3; /* GitHub container in column 2 */
+    grid-row: 6/7;    /* GitHub container in row 6 */
+}
+
+.linkedin-container {
+    grid-column: 3/4; /* LinkedIn container in column 3 */
+    grid-row: 6/7;    /* LinkedIn container in row 6 */
+}
