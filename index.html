@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magnus's Personal Site</title>
 
-
     <meta
       name="description"
       content="Welcome to Magnus's personal website - Data Scientist and Sport freak"
@@ -19,11 +18,10 @@
 
 
   <link rel="icon" type="image/x-icon" href="/assets/images/moon-64x64.webp" />
-    <!-- <link rel="apple-touch-icon" href="/img/moon-apple.png" />
-    <link rel="manifest" href="manifest.webmanifest" /> -->
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/general.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/mediaquery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -34,15 +32,50 @@
     <header>
         <div class = 'Hero-container'>
             <div class = 'Hero-content'>
-                <p>Hello, I'm Magnus.</p>
-                <h1>Transforming data <br>into insights with a <span class="blue-text">data-driven  </span>approach.</h1>
+                <div class = 'Hero-heading'>
+                    <p>Hello! I'm Magnus.</p>
+                    <div class="Hero-heading-h1">
+                        <div class = "text-content">
+                            <h1 class="header-h1">Transforming</h1>
+                        </div>
+                        <div class = "text-content">
+                            <h1 class="header-h1"> data</h1>
+                        </div>
+                        <div class = "text-content">
+                            <h1 class="header-h1">into</h1>
+                        </div>
+                        <div class = "text-content">
+                            <h1 class="header-h1">insights</h1>
+                        </div>
+                        <div class = "text-content">
+                            <h1 class="header-h1">with</h1>
+                        </div>
+                        <div class = "text-content">
+                            <h1 class="header-h1">a</h1>
+                        </div>
+                        <div class = "text-content">
+                            <h1 class="header-h1"> <span class="blue-text">data-driven  </span></h1>
+                        </div>
+                        <div class = "text-content">
+                            <h1 class="header-h1">approach</h1>
+                        </div>
+                        <!-- <h1 class="header-h1">Transforming data <br>into insights with a <span class="blue-text">data-driven  </span>approach.</h1> -->
+                    </div>
+                </div>
                 
                 <div class ="aboutme-container">
                     <div class = "aboutme-button-container">
-                        <a class="button" href="#projects">View Projects </a> 
+                        <a class="button" href="#projects">View Projects 
+                            <!-- <svg class = "vector-arrow-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" >
+                                <g color="rgb(3, 7, 18)" weight="regular">
+                                    <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z">
+                                    </path>
+                                </g>
+                            </svg> -->
+                        </a> 
                     </div>
                     <div class = "aboutme-location">
-                        <p>London, UK</p>
+                        <p>Computer Science Graduate passionate about finance and business.</p>
                     </div>
                 </div>
             </div>
@@ -62,8 +95,7 @@
                     <h3>Description
                     </h3>
                     <p>I'm a <span class="purple-text">Computer Systems Engineering</span> graduate with a Bachelor's degree, driven by a deep passion for the dynamic realm of data science.
-                        My journey commenced with a solid foundation in computer systems and hardware, but my insatiable curiosity and boundless enthusiasm for data propelled me into the captivating universe of data analysis,
-                         machine learning, and predictive modeling.</p>
+                        </p>
 
                          <p>
                         Along this path, I've developed a robust proficiency in <span class="purple-text">Python</span> and <span class="purple-text">SQL</span> and harnessed my skills with <span class="purple-text">Data Visualisation</span> tools.
@@ -116,7 +148,59 @@
                 
             </div>
 
-            <!-- ABOUT ME -->
+             <!-- BASKETBALL-->
+             <div class="card card--basketball " id="card--basketball--all"> 
+                <div class="workgrid-item">
+                     <a class="social-media-container open-modal" aria-label="Formula1 Modal" data-target="Formula1Modal"href="Basketball.html"
+                     rel="noopener"
+                      >
+                         <div class="workgrid-item-title">
+                         Dive deep into F1 to uncover racing insights, driver performance trends, and strategic advantages, enhancing the world of Formula 1 with data-driven strategies and innovations."
+                         </div>
+                         
+                         <div class="workgrid-item-content">
+                             <div class="rf-ccard-img-full-wrapper">  
+                                 <img width="400" height="500" alt="" src="/assets/images/basketball.webp" class="rf-ccard-img-full ">
+                             </div>
+                             <div class="card-content">
+                                     <h3 class="rf-ccard-content-eyebrow">PROJECT</h3>
+                                     <h2 class="heading-secondary heading-secondary-mobile heading-secondary--more-margin">
+                                         NBA Shooting
+                                     </h2>
+                             </div>
+                         </div>
+                     </a>
+                 </div>
+             </div>
+
+
+                <!-- AIRBNB-->
+            <div class="card card--airbnb " id="card--airbnb--all"> 
+                <div class="workgrid-item">
+                     <a class="social-media-container open-modal" aria-label="Formula1 Modal" data-target="Formula1Modal"href="Airbnb.html"
+                     rel="noopener"
+                      >
+                         <div class="workgrid-item-title">
+                         Dive deep into F1 to uncover racing insights, driver performance trends, and strategic advantages, enhancing the world of Formula 1 with data-driven strategies and innovations."
+                         </div>
+                         <div class="workgrid-item-content">
+                             <div class="rf-ccard-img-full-wrapper">  
+                                 <img width="400" height="500" alt="" src="/assets/images/airbnb.webp" class="rf-ccard-img-full ">
+                             </div>
+                             <div class="card-content">
+                                     <h3 class="rf-ccard-content-eyebrow">PROJECT</h3>
+                                     <h2 class="heading-secondary heading-secondary-mobile heading-secondary--more-margin">
+                                        NYC Airbnb Analysis
+                                     </h2>
+                             </div>
+                         </div>
+                     </a>
+                 </div>
+             </div>
+
+           
+
+            <!-- EDUCATION-->
             <div class="card card--education " id="card--education--all"> 
                 <div class="workgrid-item">
                      <a class="social-media-container open-modal" aria-label="Formula1 Modal" data-target="Formula1Modal"href="Formula1.html"
@@ -141,10 +225,35 @@
                  </div>
              </div>
 
-            <!-- CERTIFICATION -->
+             <!-- ABOUT ME -->
+            <div class="card card--nobel " id="card--nobel--all"> 
+                <div class="workgrid-item">
+                     <a class="social-media-container open-modal" aria-label="Formula1 Modal" data-target="Formula1Modal"href="Formula1.html"
+                     rel="noopener"
+                      >
+                         <div class="workgrid-item-title">
+                         Dive deep into F1 to uncover racing insights, driver performance trends, and strategic advantages, enhancing the world of Formula 1 with data-driven strategies and innovations."
+                         </div>
+                         
+                         <div class="workgrid-item-content">
+                             <div class="rf-ccard-img-full-wrapper">  
+                                 <img width="400" height="500" alt="" src="/assets/images/formula_1.webp" class="rf-ccard-img-full ">
+                             </div>
+                             <div class="card-content">
+                                     <h3 class="rf-ccard-content-eyebrow">PROJECT</h3>
+                                     <h2 class="heading-secondary heading-secondary-mobile heading-secondary--more-margin">
+                                        Formula 1 Analysis
+                                     </h2>
+                             </div>
+                         </div>
+                     </a>
+                 </div>
+             </div>
+
+            <!-- FARM -->
             
 
-            <div class="card card--certification " id="card--certification--all"> 
+            <div class="card card--farm " id="card--farm--all"> 
                 <div class="workgrid-item">
                      <a class="social-media-container open-modal" aria-label="Formula1 Modal" data-target="Formula1Modal"href="Formula1.html"
                      rel="noopener"
@@ -192,63 +301,9 @@
                      </a>
                  </div>
              </div>
-            
-            
-             <!-- BASKETBALL-->
-            <div class="card card--basketball " id="card--basketball--all"> 
-                <div class="workgrid-item">
-                     <a class="social-media-container open-modal" aria-label="Formula1 Modal" data-target="Formula1Modal"href="Basketball.html"
-                     rel="noopener"
-                      >
-                         <div class="workgrid-item-title">
-                         Dive deep into F1 to uncover racing insights, driver performance trends, and strategic advantages, enhancing the world of Formula 1 with data-driven strategies and innovations."
-                         </div>
-                         
-                         <div class="workgrid-item-content">
-                             <div class="rf-ccard-img-full-wrapper">  
-                                 <img width="400" height="500" alt="" src="/assets/images/basketball.webp" class="rf-ccard-img-full ">
-                             </div>
-                             <div class="card-content">
-                                     <h3 class="rf-ccard-content-eyebrow">PROJECT</h3>
-                                     <h2 class="heading-secondary heading-secondary-mobile heading-secondary--more-margin">
-                                         NBA Shooting
-                                     </h2>
-                             </div>
-                         </div>
-                     </a>
-                 </div>
-             </div>
-
-
-              <!-- AIRBNB-->
-            <div class="card card--learning " id="card--learning--all"> 
-                <div class="workgrid-item">
-                     <a class="social-media-container open-modal" aria-label="Formula1 Modal" data-target="Formula1Modal"href="Airbnb.html"
-                     rel="noopener"
-                      >
-                         <div class="workgrid-item-title">
-                         Dive deep into F1 to uncover racing insights, driver performance trends, and strategic advantages, enhancing the world of Formula 1 with data-driven strategies and innovations."
-                         </div>
-                         <div class="workgrid-item-content">
-                             <div class="rf-ccard-img-full-wrapper">  
-                                 <img width="400" height="500" alt="" src="/assets/images/airbnb.webp" class="rf-ccard-img-full ">
-                             </div>
-                             <div class="card-content">
-                                     <h3 class="rf-ccard-content-eyebrow">PROJECT</h3>
-                                     <h2 class="heading-secondary heading-secondary-mobile heading-secondary--more-margin">
-                                        NYC Airbnb Analysis
-                                     </h2>
-                             </div>
-                         </div>
-                     </a>
-                 </div>
-             </div>
-
-           
-
 
               <!-- NETFLIX-->
-            <div class="card card--credit " id="card--credit--all"> 
+            <div class="card card--netflix " id="card--netflix--all"> 
                 <div class="workgrid-item">
                      <a class="social-media-container open-modal" aria-label="Basketball" data-target="Basketball_1" href="netflix.html" rel="noopener"
                      >
@@ -257,7 +312,7 @@
                         </div>
                          <div class="workgrid-item-content">
                              <div class="rf-ccard-img-full-wrapper">  
-                                 <img width="400" height="500" alt="" src="/assets/images/netflix.webp" class="rf-ccard-img-full ">
+                                 <img width="400" height="500" alt="" src="/assets/images/netflix.jpg" class="rf-ccard-img-full ">
                              </div>
                              <div class="card-content">
                                      <h3 class="rf-ccard-content-eyebrow">PROJECT</h3>
@@ -292,7 +347,7 @@
                              <div class="card-content">
                                      <h3 class="rf-ccard-content-eyebrow">PROJECT</h3>
                                      <h2 class="heading-secondary heading-secondary-mobile heading-secondary--more-margin">
-                                        Stock Market Analysis for Tech Stocks
+                                        Stock Market Analysis
                                      </h2>
                              </div>
                          </div>
