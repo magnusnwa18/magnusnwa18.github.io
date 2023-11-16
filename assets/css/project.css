@@ -32,14 +32,14 @@ p {
 }
 @font-face {
   font-family:Silka Regular;
-  src:url(Silka-Regular.otf);
+  src:url(/assets/fonts/Silka-Regular.otf);
   font-style:normal;
   font-weight:400;
   font-display:swap
 }
 @font-face {
   font-family:Silka Medium;
-  src:url(Silka-Medium.ttf);
+  src:url(/assets/fonts/Silka-Medium.ttf);
   font-style:normal;
   font-weight:400;
   font-display:swap
@@ -53,19 +53,12 @@ p {
 }
 @font-face {
   font-family:Moranga Bold;
-  src:url(Moranga-Black.otf);
+  src:url(/assets/fonts/Moranga-Black.otf);
   font-style:normal;
   font-weight:400;
   font-display:swap
 }
 
-@font-face {
-    font-family:Tan-Nimbus;
-    src:url(TAN-NIMBUS.otf);
-    font-style:normal;
-    font-weight:400;
-    font-display:swap
-  }
 /* BODY */
 html {
     background: #090c10;
