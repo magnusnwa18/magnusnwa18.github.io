@@ -32,7 +32,6 @@
 
         .theme-text-bold {
             font-weight: 700;
-            color: currentColor;
         }
 
         /* Smooth Project Detail Transition */
@@ -52,7 +51,7 @@
 </head>
 <body class="bg-[#fafafa] text-black transition-colors duration-300 light">
 
-    <!-- MINIMAL NAV - Border removed as requested -->
+    <!-- MINIMAL NAV -->
     <nav class="fixed top-0 bottom-0 left-0 w-16 md:w-20 flex flex-col items-center py-8 z-50 bg-inherit">
         <div class="font-bold text-lg tracking-tighter italic text-orange-500">M.</div>
         
@@ -97,11 +96,11 @@
                 
                 <h1 class="text-5xl md:text-8xl font-light leading-[0.9] mb-10">
                     Magnus <br />
-                    <span class="text-black-400">Nwaokeleme</span>
+                    <span class="text-zinc-400">Nwaokeleme</span>
                 </h1>
                 <p class="alt-font italic text-lg md:text-2xl tracking-normal text-orange-500 mb-4">Digital Transformation & Technology Analyst</p>
                 <p id="hero-text" class="text-lg md:text-xl text-zinc-500 leading-relaxed max-w-2xl font-light">
-                    Driving <span class="theme-text-bold italic font-medium">digital transformation</span> through a blend of technical expertise and strategic insight. Passionate about <span class="theme-text-bold italic font-medium">leveraging AI</span> to solve complex business challenges and deliver scalable solutions.
+                    Driving <span class="theme-text-bold italic font-medium text-black dark:text-white">digital transformation</span> through a blend of technical expertise and strategic insight. Passionate about <span class="theme-text-bold italic font-medium text-black dark:text-white">leveraging AI</span> to solve complex business challenges and deliver scalable solutions.
                 </p>
             </div>
 
@@ -177,30 +176,26 @@
                 <div onclick="toggleProject(this)" class="project-card group cursor-pointer border-b custom-border pb-8 hover:border-orange-500/50 transition-colors">
                     <div class="flex justify-between items-start">
                         <div class="max-w-md">
-                            <div class="text-[10px] text-orange-500 mb-2">[PROJECT_AUTOMATION]</div>
-                            <h3 class="text-xl mb-2 transition-colors group-hover:text-orange-500">Workflow-Orchestrator</h3>
-                            <p class="text-sm text-zinc-500 font-light leading-relaxed">Systematic redesign of internal fintech workflows to reduce friction in PII management and risk verification.</p>
+                            <div class="text-[10px] text-orange-500 mb-2">[PROJECT_RETAIL_AI]</div>
+                            <h3 class="text-xl mb-2 transition-colors group-hover:text-orange-500">Retail-AI-Forecaster</h3>
+                            <p class="text-sm text-zinc-500 font-light leading-relaxed">Predictive supply chain optimization using machine learning to mitigate stockouts in emerging markets.</p>
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon text-zinc-300 group-hover:text-orange-500 transition-all"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
                     </div>
                     <div class="project-details" onclick="event.stopPropagation()">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
                             <div class="space-y-4">
-                                <p class="text-zinc-500 font-light">Implemented secure data pipelines for Personally Identifiable Information (PII) handling, ensuring GDPR and local regulatory compliance.</p>
+                                <p class="text-zinc-500 font-light">Deployed a time-series model to analyze seasonal demand patterns and optimize inventory turnover.</p>
                                 <div class="flex items-center gap-4">
                                     <div class="flex gap-2">
-                                        <span class="px-2.5 py-1 bg-zinc-200 dark:bg-zinc-800 text-black dark:text-zinc-300 text-[10px] rounded transition-colors">FastAPI</span>
-                                        <span class="px-2.5 py-1 bg-zinc-200 dark:bg-zinc-800 text-black dark:text-zinc-300 text-[10px] rounded transition-colors">Docker</span>
+                                        <span class="px-2.5 py-1 bg-zinc-200 dark:bg-zinc-800 text-black dark:text-zinc-300 text-[10px] rounded transition-colors">PyTorch</span>
+                                        <span class="px-2.5 py-1 bg-zinc-200 dark:bg-zinc-800 text-black dark:text-zinc-300 text-[10px] rounded transition-colors">AWS SageMaker</span>
                                     </div>
-                                    <a href="https://github.com/magnusnwa18/Workflow-Orchestrator" target="_blank" class="text-orange-500 hover:text-orange-600 flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest transition-colors">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-                                        GitHub
-                                    </a>
                                 </div>
                             </div>
                             <div class="bg-orange-500/5 p-4 border-l border-orange-500">
                                 <div class="text-[10px] font-bold uppercase mb-2">Outcome</div>
-                                <p class="text-xs italic">Eliminated 40% of manual data entry errors and secured data-at-rest across the platform.</p>
+                                <p class="text-xs italic">Achieved 22% improvement in inventory efficiency for regional distributors.</p>
                             </div>
                         </div>
                     </div>
@@ -265,15 +260,33 @@
             <!-- CONTACT -->
             <div id="contact" class="tab-content fade-in">
                 <div class="text-orange-500 text-[10px] tracking-[0.4em] mb-4 font-bold uppercase">Terminal.Access</div>
-                <h2 class="text-5xl font-light mb-12 italic">Let's talk.</h2>
-                <div class="space-y-4">
-                    <a href="mailto:magnus@consultant.ai" class="block text-xl hover:text-orange-500 transition-colors underline decoration-zinc-300 dark:decoration-zinc-800 underline-offset-8">
-                        magnus@consultant.ai
-                    </a>
-                    <div class="flex gap-8 pt-8">
-                        <a href="#" class="text-xs text-zinc-400 hover:text-orange-500 transition-colors uppercase tracking-widest">LinkedIn</a>
-                        <a href="#" class="text-xs text-zinc-400 hover:text-orange-500 transition-colors uppercase tracking-widest">GitHub</a>
-                        <a href="#" class="text-xs text-zinc-400 hover:text-orange-500 transition-colors uppercase tracking-widest">download_cv</a>
+                <h2 class="text-5xl font-light mb-8 italic">Let's talk.</h2>
+                <div class="space-y-8">
+                    <div class="max-w-md">
+                        <p class="text-sm text-zinc-500 font-light leading-relaxed mb-6">
+                            Currently open to discussions regarding digital strategy, AI implementation, or high-impact technology consulting. 
+                        </p>
+                        <a href="mailto:magnus@consultant.ai" class="block text-xl hover:text-orange-500 transition-colors underline decoration-zinc-300 dark:decoration-zinc-800 underline-offset-8">
+                            magnus@consultant.ai
+                        </a>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-8 pt-4 border-t custom-border">
+                        <div>
+                            <div class="text-[10px] text-zinc-400 uppercase tracking-widest mb-2">Social</div>
+                            <div class="flex gap-4">
+                                <a href="#" class="text-xs hover:text-orange-500 transition-colors uppercase tracking-widest">LinkedIn</a>
+                                <a href="#" class="text-xs hover:text-orange-500 transition-colors uppercase tracking-widest">GitHub</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-[10px] text-zinc-400 uppercase tracking-widest mb-2">Resource</div>
+                            <a href="#" class="text-xs hover:text-orange-500 transition-colors uppercase tracking-widest">download_cv</a>
+                        </div>
+                        <div>
+                            <div class="text-[10px] text-zinc-400 uppercase tracking-widest mb-2">Location</div>
+                            <span class="text-xs uppercase tracking-widest opacity-60">United Kingdom</span>
+                        </div>
                     </div>
                 </div>
             </div>
