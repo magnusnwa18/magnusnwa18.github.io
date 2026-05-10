@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magnus Nwaokeleme</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <script>tailwind.config = { darkMode: 'class' }</script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:ital,wght@1,300&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'JetBrains+Mono', monospace;
+            font-family: 'JetBrains Mono', monospace;
             -webkit-font-smoothing: antialiased;
         }
         .alt-font {
@@ -32,10 +31,6 @@
         .dark .custom-border { border-color: #27272a; }
         .light .custom-border { border-color: #e4e4e7; }
 
-        .theme-text-bold {
-            font-weight: 700;
-        }
-
         /* Smooth Project Detail Transition */
         .project-details {
             max-height: 0;
@@ -51,7 +46,7 @@
         }
     </style>
 </head>
-<body class="bg-[#fafafa] text-black transition-colors duration-300 light">
+<body class="bg-[#fafafa] text-black transition-colors duration-300">
 
     <!-- MINIMAL NAV -->
     <nav class="fixed top-0 bottom-0 left-0 w-16 md:w-20 flex flex-col items-center py-8 z-50 bg-inherit">
@@ -98,11 +93,11 @@
                 
                 <h1 class="text-5xl md:text-8xl font-light leading-[0.9] mb-10">
                     Magnus <br />
-                    <span class="text-black">Nwaokeleme</span>
+                    <span class="text-zinc-400">Nwaokeleme</span>
                 </h1>
                 <p class="alt-font italic text-lg md:text-2xl tracking-normal text-orange-500 mb-4">Digital Transformation & Technology Analyst</p>
                 <p id="hero-text" class="text-lg md:text-xl text-zinc-500 leading-relaxed max-w-2xl font-light">
-                    Driving <span class="theme-text-bold italic font-medium text-black dark:text-white">digital transformation</span> through a blend of technical expertise and strategic insight. Passionate about <span class="theme-text-bold italic font-medium text-black dark:text-white">leveraging AI</span> to solve complex business challenges and deliver scalable solutions.
+                    Driving <span class="font-bold italic text-black dark:text-white">digital transformation</span> through a blend of technical expertise and strategic insight. Passionate about <span class="font-bold italic text-black dark:text-white">leveraging AI</span> to solve complex business challenges and deliver scalable solutions.
                 </p>
             </div>
 
@@ -229,7 +224,6 @@
                         </ul>
                     </div>
                     
-                    <!-- Education Section -->
                     <div class="space-y-12">
                         <div>
                             <div class="text-orange-500 text-[10px] tracking-[0.4em] mb-10 font-bold uppercase">Academic_Root</div>
@@ -266,7 +260,7 @@
                 <div class="space-y-8">
                     <div class="max-w-md">
                         <p class="text-sm text-zinc-500 font-light leading-relaxed mb-6">
-                            Currently open to discussions regarding digital strategy, AI implementation, or high-impact technology consulting. 
+                            Currently open to discussions regarding digital strategy, AI implementation, or high-impact technology consulting.
                         </p>
                         <a href="mailto:magnus@consultant.ai" class="block text-xl hover:text-orange-500 transition-colors underline decoration-zinc-300 dark:decoration-zinc-800 underline-offset-8">
                             magnus@consultant.ai
@@ -333,13 +327,11 @@
             
             if (isDark) {
                 html.classList.add('dark');
-                html.classList.remove('light');
                 body.classList.add('bg-[#050505]', 'text-white');
                 body.classList.remove('bg-[#fafafa]', 'text-black');
                 btn.innerText = 'LIGHT_MODE';
             } else {
                 html.classList.remove('dark');
-                html.classList.add('light');
                 body.classList.remove('bg-[#050505]', 'text-white');
                 body.classList.add('bg-[#fafafa]', 'text-black');
                 btn.innerText = 'DARK_MODE';
@@ -350,7 +342,7 @@
             const now = new Date();
             const timeStr = now.toTimeString().split(' ')[0];
             const clockEl = document.getElementById('clock');
-            if(clockEl) clockEl.innerText = timeStr;
+            if (clockEl) clockEl.innerText = timeStr;
         }
         setInterval(updateClock, 1000);
         updateClock();
